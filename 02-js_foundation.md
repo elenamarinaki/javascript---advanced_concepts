@@ -105,3 +105,11 @@
   - We never remove them after we use them! So they constantly keep a place in the memory.
 - `setInterval()`
   - The objects inside are never to be picked by the garbage collector, unless we **clear the interval**!
+
+### Single Threaded 🧵
+
+- Only one set of instructions is running at a time!
+- It has only **one call stack**!
+- JavaScript is **synchronous**. This is a problem for long running tasks.
+- BUT! Most of the time, we never use the javascript engine alone. We have asynchronous code that helps ▶️ **_JAVASCRIPT RUNTIME_**
+
