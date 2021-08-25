@@ -69,5 +69,18 @@
   - inline caching
 - We should write code that is predictable and does not confuse the compiler!
 
+### Web Assembly
 
-# COMING NEXT ... WEB ASSEMBLY!
+- The compiling has to happen on the browser.
+- All browsers have to agree on an executable format.
+
+                    ⬇️   ⬇️   ⬇️
+
+- **Standard Binary Executable Format**
+  - we don't have to do all these steps, interpreting, compiling etc on the engine.
+
+
+### Call Stack & Memory Heap 🧱
+
+- We need a place to store information and a place where we keep track of what is happening in our code and _where_ we are in the code.
+
