@@ -43,7 +43,7 @@
 
 <img src='images/arrow_1.svg' width=90>
 
-## JIT COMPILER!
+## JIT COMPILER! 🤩
 
 - Browsers started mixing compilers to make the engine faster!
 - AST -> Interpreter -> Bytecode - not as low level as machine code (Ignition! 🚀)
@@ -51,7 +51,22 @@
 - The compiler replaces the sections of bytecode that can be improved with optimized code, **constantly**!
 - The overall execution speed is improving!
 
-## Is javascript an *interpreted* language? 🤔
+## Is javascript an _interpreted_ language? 🤔
 
-- Yes! In the beginning stages (see _SpiderMonkey_). 
+- Yes! In the beginning stages (see _SpiderMonkey_).
 - But things have evolved now. Depends on the implementation, so not technically!!
+
+### Code Optimization
+
+- Problematic issues:
+  - eval()
+  - arguments
+  - for in
+  - with
+  - delete
+  - hidden classes
+  - inline caching
+- We should write code that is predictable and does not confuse the compiler!
+
+
+# COMING NEXT ... WEB ASSEMBLY!
