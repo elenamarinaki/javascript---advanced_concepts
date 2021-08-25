@@ -93,7 +93,7 @@
 - After allocated memory has been used, it's cleaned when is not needed any more.
 - Only the useful data remains.
 - The _garbage collector_ prevents memory leak! -> Mark and Sweep! 🌪️
-- ⚠️ **False** impression: we don't have to do memory management...🤔 
+- ⚠️ **False** impression: we don't have to do memory management...🤔
 
 ### Memory Leak 💦
 
@@ -101,3 +101,7 @@
 - The garbage collection cannot work on a reserved variable.
 - _Why we try to avoid using a lot of global variables?_ 🌐
   - These memory slots are always occupied during the execution of the program and cannot be managed by the garbage collector.
+- _What about Event Listeners?_
+  - We never remove them after we use them! So they constantly keep a place in the memory.
+- `setInterval()`
+  - The objects inside are never to be picked by the garbage collector, unless we **clear the interval**!
