@@ -113,3 +113,6 @@
 - JavaScript is **synchronous**. This is a problem for long running tasks.
 - BUT! Most of the time, we never use the javascript engine alone. We have asynchronous code that helps ▶️ **_JAVASCRIPT RUNTIME_**
 
+### JavaScript Runtime 🌪️
+
+...
