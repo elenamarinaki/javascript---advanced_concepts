@@ -79,8 +79,17 @@
 - **Standard Binary Executable Format**
   - we don't have to do all these steps, interpreting, compiling etc on the engine.
 
-
 ### Call Stack & Memory Heap 🧱
 
 - We need a place to store information and a place where we keep track of what is happening in our code and _where_ we are in the code.
+- Both are part of the javascript engine.
+- Call Stack -> First In Last Out mode (FILO)
+- ⚠️ Simple variables are stored in the stack, and complex structures (eg objects) are stored in the memory heap.
+- The call stack can be exceeded and then we have what we call **stack overflow**.
 
+### Garbage Collection 🗑️
+
+- JavaScript is a garbage collected language.
+- After allocated memory has been used, it's cleaned when is not needed any more.
+- Only the useful data remains.
+- The _garbage collector_ prevents memory leak!
