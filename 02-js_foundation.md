@@ -41,6 +41,6 @@
 - _Interpreters_ are quick in running. 🏃 BUT, when you're running the same code more than once, it's getting slow! 🐢
 - _Compilers_ help with that. Doesn't need to repeat the translation for loops for example => _**OPTIMIZATION**_ ✨
 
-<img src='images/arrow_1.png' width=100>
+<img src='images/arrow_1.svg' width=100>
 
 ## JIT COMPILER!
