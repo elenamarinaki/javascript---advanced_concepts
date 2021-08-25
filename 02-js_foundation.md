@@ -92,4 +92,12 @@
 - JavaScript is a garbage collected language.
 - After allocated memory has been used, it's cleaned when is not needed any more.
 - Only the useful data remains.
-- The _garbage collector_ prevents memory leak!
+- The _garbage collector_ prevents memory leak! -> Mark and Sweep! 🌪️
+- ⚠️ **False** impression: we don't have to do memory management...🤔 
+
+### Memory Leak 💦
+
+- Fill memory heap with more and more data till the program crashes.
+- The garbage collection cannot work on a reserved variable.
+- _Why we try to avoid using a lot of global variables?_ 🌐
+  - These memory slots are always occupied during the execution of the program and cannot be managed by the garbage collector.
