@@ -13,4 +13,4 @@
 - JS used to be **slow**. Google build a browser to control more of the market.
 - First Creator => _Brendan Eich_
 
-<img src='images/screen_1.png' width=200>
+<img src='images/screen_1.png' width=600>
