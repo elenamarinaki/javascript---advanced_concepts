@@ -68,16 +68,62 @@
   - hidden classes
   - inline caching
 - We should write code that is predictable and does not confuse the compiler!
+- **Memoization**
+
+  - Memoization is a way to cache a return value of a function based on its parameters. This makes the function that takes a long time run much faster after one execution. If the parameter changes, it will still have to reevaluate the function.
+
+  ```js
+  // Bad Way
+  function addTo80(n) {
+    console.log('long time...');
+    return n + 80;
+  }
+
+  addTo80(5)
+  addTo80(5)
+  addTo80(5)
+
+  // long time... 85
+  // long time... 85
+  // long time... 85
+
+  // Memoized Way
+  functions memoizedAddTo80() {
+  let cache = {}
+  return function(n) { // closure to access cache obj
+  if (n in cache) {
+  return cache[n]
+  } else {
+  console.log('long time...')
+  cache[n] = n + 80
+  return cache[n]
+  }
+  }
+  }
+  const memoized = memoizedAddTo80()
+
+  console.log('1.', memoized(5))
+  console.log('2.', memoized(5))
+  console.log('3.', memoized(5))
+  console.log('4.', memoized(10))
+
+  // long time...
+  // 1. 85
+  // 2. 85
+  // 3. 85
+  // long time...
+  // 4. 90
+  ```
 
 ### Web Assembly
 
 - The compiling has to happen on the browser.
 - All browsers have to agree on an executable format.
 
-                    ⬇️   ⬇️   ⬇️
+                  ⬇️   ⬇️   ⬇️
 
 - **Standard Binary Executable Format**
-  - we don't have to do all these steps, interpreting, compiling etc on the engine.
+- we don't have to do all these steps, interpreting, compiling etc on the engine.
 
 ### Call Stack & Memory Heap 🧱
 
@@ -100,11 +146,11 @@
 - Fill memory heap with more and more data till the program crashes.
 - The garbage collection cannot work on a reserved variable.
 - _Why we try to avoid using a lot of global variables?_ 🌐
-  - These memory slots are always occupied during the execution of the program and cannot be managed by the garbage collector.
+- These memory slots are always occupied during the execution of the program and cannot be managed by the garbage collector.
 - _What about Event Listeners?_
-  - We never remove them after we use them! So they constantly keep a place in the memory.
+- We never remove them after we use them! So they constantly keep a place in the memory.
 - `setInterval()`
-  - The objects inside are never to be picked by the garbage collector, unless we **clear the interval**!
+- The objects inside are never to be picked by the garbage collector, unless we **clear the interval**!
 
 ### Single Threaded 🧵
 
@@ -116,8 +162,8 @@
 ### JavaScript Runtime 🌪️
 
 - The Web API comes with the browser.
-  - Can do a variety of things: send HTTP requests, listen to events, delay execution, caching, database storage.
-  - Access what the Web API provides => `window`
+- Can do a variety of things: send HTTP requests, listen to events, delay execution, caching, database storage.
+- Access what the Web API provides => `window`
 - Under the hood, browsers use low level languages to perform these operations and make JavaScript look like it is running faster.
 - These Web APIs are **asynchronous**.
 - The callbacks are sent to the Web APIs.
@@ -139,3 +185,4 @@
 - `Worker-threads` in the background.
 
 <img src='images/screen_4.png' width=600>
+```
