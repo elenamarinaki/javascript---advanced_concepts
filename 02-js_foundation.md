@@ -115,4 +115,13 @@
 
 ### JavaScript Runtime 🌪️
 
-...
+- The Web API comes with the browser.
+  - Can do a variety of things: send HTTP requests, listen to events, delay execution, caching, database storage.
+  - Access what the Web API provides => `window`
+- Under the hood, browsers use low level languages to perform these operations and make JavaScript look like it is running faster.
+- These Web APIs are **asynchronous**.
+- The callbacks are sent to the Web APIs.
+- the `Event Loop` is constantly running, waiting for the `Call Stack` to empty.
+- The `Event Loop` is pushing the callback from the `Callback Queue` to the `Call Stack`.
+
+<img src='images/screen_3.png' width=600>
