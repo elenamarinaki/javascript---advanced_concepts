@@ -125,3 +125,17 @@
 - The `Event Loop` is pushing the callback from the `Callback Queue` to the `Call Stack`.
 
 <img src='images/screen_3.png' width=600>
+
+### Node.JS 🧰
+
+- A C++ program.
+- A JavaScript runtime built on Chrome's V8 JavaScript engine.
+- Till 2009, JS was run only inside the browser.
+- The browser does not have access to the local files, that would be a security risk.
+- With Node.JS we can access file systems.
+- The `V8` helps understanding the JavaScript and the `LIBUV` helps with the background tasks.
+- Node.JS has `global` _instead of `window`_.
+- This is why it's a server side platform, based on asynchronous I/O that is `non-blocking`.
+- `Worker-threads` in the background.
+
+<img src='images/screen_4.png' width=600>
