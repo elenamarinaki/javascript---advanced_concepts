@@ -135,6 +135,27 @@
   // then it will be optimized (inline cached) to just be 'found Brittney Postma'
   ```
 
+- **Hidden Classes**
+
+  - By setting these values in a different order than they were instantiated, we are making the compiler slower because of hidden classes. Hidden classes are what the compiler uses under the hood to say that these 2 objects have the same properties. If values are introduced in a different order than it was set up in, the compiler can get confused and think they don't have a shared hidden class, they are 2 different things, and will slow down the computation. Also, the reason the delete keyword shouldn't be used is because it would change the hidden class.
+
+  ```js
+  function Animal(x, y) {
+  this.x = x;
+  this.y = y;
+  }
+
+  const obj1 = new Animal(1, 2);
+  const obj2 = new Animal(3, 4);
+
+  obj1.a = 30;
+  obj1.b = 100;
+  obj2.b = 30;
+  obj2.a = 100;
+
+  delete obj1.x = 30;
+  ```
+
 ### Web Assembly
 
 - The compiling has to happen on the browser.
