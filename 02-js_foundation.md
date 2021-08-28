@@ -226,4 +226,3 @@
 - `Worker-threads` in the background.
 
 <img src='images/screen_4.png' width=600>
-```
