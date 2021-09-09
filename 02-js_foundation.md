@@ -1,6 +1,4 @@
-# JavaScript - Advanced Concepts 🚀
-
-## JavaScript Foundation
+# JavaScript Foundation
 
 ### 🦫 Javascript Engine
 
