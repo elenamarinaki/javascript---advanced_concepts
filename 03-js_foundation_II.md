@@ -30,3 +30,7 @@ Yes!
 - We can assign variables to the global object. This is where the `creation phase` ends. 🎨
 - Then comes the `execution phase`, when we actually run our code. 🌪️
 - A _Function Execution Context_ is added above the global one every time we have a new function (and the stack gets created). 🧱
+
+### Lexical Environment 📚
+
+coming next ...
