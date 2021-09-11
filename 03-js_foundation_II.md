@@ -14,6 +14,7 @@ True! All code is part of an execution context; either global or part of some fu
 - The Global Execution Context gives us:
   - a `global object`
   - the keyword `this`
+  - `Hoisting`
 
 <img src='images/screen_5.png' width=500>
 
@@ -42,4 +43,24 @@ Yes!
 - First lexical environment => Global Lexical Environment
 
 ### Hoisting 🪢
-coming next...
+
+- Allocate space in our memory heap, to make sure the engine is ready for the execution.
+- The moving the variables or function declarations on the top of their respective environment.
+- JS allocates memory for the variables and functions during the creation phase before it executes it.
+- **Functions are fully hoisted in javascript**. This is _not true for variables_, where the name is reserved, but the value is not assigned during hoisting.
+- ### ⚠️
+  From the variables, only the `var` gets hoisted! E.g. if we try to use a variable before its declaration with `let`, it will show `undefined`!
+- Function declarations VS function expressions:
+  - Declaration:
+  ```js
+  function sing() {
+    console.log('do re mi!');
+  }
+  ```
+  - Expression:
+  ```js
+  var sing2 = function () {
+    console.log('la si do!');
+  };
+  ```
+  During the creation phase, the `sing2` is going to be hoisted and assigned `undefined`, until its execution phase. So, I cannot call it before its line of declaration.
