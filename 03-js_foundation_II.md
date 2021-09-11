@@ -40,3 +40,6 @@ Yes!
 - 💡 _Execution context tells you which lexical environment is currently running._
 - In JS, our **lexical scope** (available data + variables where the function was defined) determines our available variables. _Not where the function is called_ (dynamic scope)!
 - First lexical environment => Global Lexical Environment
+
+### Hoisting 🪢
+coming next...
