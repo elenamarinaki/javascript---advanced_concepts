@@ -64,3 +64,5 @@ Yes!
   };
   ```
   During the creation phase, the `sing2` is going to be hoisted and assigned `undefined`, until its execution phase. So, I cannot call it before its line of declaration.
+
+<img src='images/screen_7.png' width=500>
