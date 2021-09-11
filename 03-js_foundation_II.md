@@ -33,4 +33,10 @@ Yes!
 
 ### Lexical Environment 📚
 
-coming next ...
+- a.k.a. Lexical Scope, Lexical Analysis
+- It refers to _where we write something_, every time we create an execution context.
+- Compilers are doing lexical analysis => where is the location of the words, in which execution context are there to be found.
+- Every function offers a different execution context, hence a new lexical environment is created.
+- 💡 _Execution context tells you which lexical environment is currently running._
+- In JS, our **lexical scope** (available data + variables where the function was defined) determines our available variables. _Not where the function is called_ (dynamic scope)!
+- First lexical environment => Global Lexical Environment
