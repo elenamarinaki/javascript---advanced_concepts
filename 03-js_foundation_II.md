@@ -93,3 +93,9 @@ foodThoughts();
 
 Original favourite food: `undefined`
 New favourite food: `sushi`
+
+### ✏️ Explanation
+
+**Hoisting happens anew in every new execution context!**
+So, when we enter the `foodThoughts()` function, the `favouriteFood` variable gets re-hoisted _at the beginning of the new execution context_!
+=> Hoisting should be avoided every time possible.
