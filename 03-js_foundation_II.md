@@ -131,3 +131,13 @@ bigBrother();
 - Function invocation provides:
   - `.this`
   - arguments => is an object available to us after we create a new execution context with a function
+
+### Arguments Keyword 🔑
+
+- to be able to work with the `arguments` keyword:
+  ```js
+  Array.from(arguments);
+  ```
+- Now we can use array methods on arguments!
+- **_Spread operator_** => (...args)
+- Each execution context creates a new object.
