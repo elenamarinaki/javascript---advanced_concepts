@@ -124,4 +124,10 @@ bigBrother();
 ```
 
 ### Function Invocation 📞
-coming next ... 
+
+- Invocation = Call = Execution => running the function with `()`.
+- Function expression get defined at `run` time.
+- Function declaration gets defined at `parse` time.
+- Function invocation provides:
+  - `.this`
+  - arguments => is an object available to us after we create a new execution context with a function
