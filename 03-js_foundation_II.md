@@ -145,3 +145,10 @@ bigBrother();
 ### Variable Environment
 
 - Each execution context has its own variable environment.
+
+### Scope Chain ⛓️
+
+- Each execution context has its link to the outside world, to its parent.
+- This outside environment defines where the function is sit lexically.
+- **_Lexical scope_** -> where the function is defined and available variables.
+- **_Dynamic scope_** -> where the function is called
