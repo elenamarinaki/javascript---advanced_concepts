@@ -152,3 +152,7 @@ bigBrother();
 - This outside environment defines where the function is sit lexically.
 - **_Lexical scope_** -> where the function is defined and available variables.
 - **_Dynamic scope_** -> where the function is called
+
+#### ⚠️ Leakage of global variables
+
+When variables are not defined through keywords _var_, _let_ _const_. To avoid this => `'use strict'`
