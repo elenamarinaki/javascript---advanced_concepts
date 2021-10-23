@@ -141,3 +141,7 @@ bigBrother();
 - Now we can use array methods on arguments!
 - **_Spread operator_** => (...args)
 - Each execution context creates a new object.
+
+### Variable Environment
+
+- Each execution context has its own variable environment.
