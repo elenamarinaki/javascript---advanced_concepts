@@ -161,3 +161,19 @@ When variables are not defined through keywords _var_, _let_ _const_. To avoid t
 
 - in function scope, we cannot access the "insides" of a function
 - `const` and `var` are block scoped
+
+### Global Variables
+
+- polluting the global namespace 🪐
+
+### IIFE
+
+-
+
+```js
+(function () {})();
+```
+
+- putting the function in local scope, so we avoid collisions!
+- NOT a function declaration, but a _function expression_
+- the function is **_anonymous_**
