@@ -156,3 +156,8 @@ bigBrother();
 #### ⚠️ Leakage of global variables
 
 When variables are not defined through keywords _var_, _let_ _const_. To avoid this => `'use strict'`
+
+### Function scope vs block scope
+
+- in function scope, we cannot access the "insides" of a function
+- `const` and `var` are block scoped
