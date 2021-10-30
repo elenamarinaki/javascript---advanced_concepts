@@ -177,3 +177,13 @@ When variables are not defined through keywords _var_, _let_ _const_. To avoid t
 - putting the function in local scope, so we avoid collisions!
 - NOT a function declaration, but a _function expression_
 - the function is **_anonymous_**
+
+### `this`
+
+- `this.` is the object that the function is property of
+
+
+### Context vs Scope
+
+- scope -> function based, visibility of variables
+- context -> object based, what's the value of that `this` keyboard?
