@@ -168,6 +168,8 @@ When variables are not defined through keywords _var_, _let_ _const_. To avoid t
 
 ### IIFE
 
+**_(immediately invoked function expressions)_**
+
 -
 
 ```js
@@ -181,7 +183,8 @@ When variables are not defined through keywords _var_, _let_ _const_. To avoid t
 ### `this`
 
 - `this.` is the object that the function is property of
-
+- dynamic scope, it gets determined when the function is invoked
+- `call()`, `apply()`, `bind()`
 
 ### Context vs Scope
 
